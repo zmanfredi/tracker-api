@@ -4,7 +4,7 @@ const cookieParser = require('cookie-parser');
 const { connectToDb } = require('./db.js');
 const { installHandler } = require('./api_handler.js');
 
-const port = process.env.API_SERVER_PORT || 3000;
+const port = process.env.PORT || 3000;
 const auth = require('./auth.js');
 
 const app = express();
